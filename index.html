@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Thiago Mazzaroli, desenvolvedor full stack (Java, Angular, PostgreSQL e AWS).">
+  <meta name="author" content="Thiago Mazzaroli">
+  <title>Thiago Mazzaroli | Desenvolvedor Full Stack</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <nav aria-label="Navegação principal">
+      <a class="marca" href="#inicio">Thiago Mazzaroli</a>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="apresentacao">
+      <div class="apresentacao-texto">
+        <p class="saudacao">Olá, eu sou</p>
+        <h1>Thiago Mazzaroli</h1>
+        <p class="cargo">Desenvolvedor Full Stack&nbsp;· Java&nbsp;· Angular&nbsp;· AWS</p>
+        <p>Desenvolvo, de ponta a ponta, funcionalidades de uma plataforma SaaS de CRM com automação de marketing, atendimento multicanal e inteligência artificial: da modelagem de dados à interface que o cliente usa.</p>
+        <p class="acoes">
+          <a class="botao" href="#projetos">Conheça meus projetos</a>
+          <a class="botao botao-secundario" href="#contato">Fale comigo</a>
+        </p>
+      </div>
+      <img class="ilustracao" src="img/stack.svg" alt="Diagrama da minha stack: no centro, desenvolvimento full stack, ligado a Angular (front-end), Java (back-end), PostgreSQL (dados), AWS SQS e S3, IA (agentes) e webhooks (integrações)." width="480" height="480">
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <p>Sou desenvolvedor full stack na <a href="https://leadfinder.com.br" target="_blank" rel="noopener">LeadFinder</a> e estudante da UTFPR. No dia a dia trabalho em todas as camadas do produto: modelo dados no PostgreSQL, escrevo serviços em Java, integro sistemas por meio de filas e webhooks e construo interfaces em Angular com TypeScript.</p>
+      <p>Gosto especialmente de problemas em que a confiabilidade importa: eventos que chegam fora de ordem, mensagens que não podem ser processadas duas vezes e grandes volumes que precisam rodar em lote sem afetar o restante do sistema. Também tenho levado inteligência artificial para dentro do produto, com agentes que consultam uma base de conhecimento e executam ações reais.</p>
+
+      <ul class="destaques">
+        <li><strong>3 canais</strong> integrados: Instagram, Facebook e WhatsApp</li>
+        <li><strong>300+ campos</strong> disponíveis no gerador de relatórios</li>
+        <li><strong>De ponta a ponta</strong> do banco de dados ao frontend</li>
+      </ul>
+
+      <h3>Interesses</h3>
+      <ul class="lista">
+        <li>Arquitetura orientada a eventos e sistemas distribuídos</li>
+        <li>Inteligência artificial aplicada a produtos reais</li>
+        <li>Modelagem de dados flexível e escalável</li>
+        <li>Ferramentas self-service que dão autonomia ao usuário</li>
+      </ul>
+    </section>
+
+    <section id="formacao">
+      <h2>Formação acadêmica</h2>
+      <article class="cartao">
+        <h3>Graduação</h3>
+        <p class="meta">Universidade Tecnológica Federal do Paraná (UTFPR) · Em andamento</p>
+        <p>Na disciplina PW14SW, este site é construído de forma incremental: primeiro somente com HTML semântico, depois com CSS e, por fim, com layout responsivo Mobile First usando Flexbox e Grid.</p>
+      </article>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiência</h2>
+      <article class="cartao">
+        <h3>Desenvolvedor Full Stack</h3>
+        <p class="meta"><a href="https://leadfinder.com.br" target="_blank" rel="noopener">LeadFinder</a> · <time datetime="2024-12">dez. de 2024</time> – atual</p>
+        <p>Plataforma SaaS de CRM com automação de marketing, atendimento multicanal e IA. Atuo de ponta a ponta no produto:</p>
+        <ul class="lista">
+          <li>modelagem de dados e consultas em PostgreSQL;</li>
+          <li>serviços e APIs REST em Java;</li>
+          <li>mensageria e integrações com AWS SQS, Amazon S3 e webhooks;</li>
+          <li>interfaces em Angular e TypeScript.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos e principais entregas</h2>
+      <p class="introducao">Algumas das funcionalidades que desenvolvi na LeadFinder e o próprio projeto deste site.</p>
+
+      <div class="grade grade-projetos">
+        <article class="cartao cartao-destaque">
+          <h3>Integração com Instagram, Facebook e WhatsApp</h3>
+          <p>Arquitetura orientada a eventos com webhooks e filas AWS SQS. O processamento é idempotente e trata eventos que chegam fora de ordem; a autenticação usa OAuth e as mídias recebidas passam por um pipeline até o Amazon S3, com retentativas automáticas.</p>
+          <ul class="tags">
+            <li>Webhooks</li>
+            <li>AWS SQS</li>
+            <li>OAuth</li>
+            <li>Amazon S3</li>
+          </ul>
+        </article>
+
+        <article class="cartao">
+          <h3>Automação de marketing</h3>
+          <p>Máquina de estados que reage a aberturas, cliques e respostas de campanhas de e-mail e WhatsApp, inclusive à falta de interação dentro de janelas de tempo. Grandes volumes são processados em lotes agendados.</p>
+          <ul class="tags">
+            <li>Java</li>
+            <li>Máquina de estados</li>
+            <li>Jobs agendados</li>
+          </ul>
+        </article>
+
+        <article class="cartao">
+          <h3>Campos personalizáveis</h3>
+          <p>Modelo de dados dinâmico e tipado que permite a cada cliente criar os próprios campos sem alterar o banco. Os campos aparecem automaticamente em documentos, relatórios e na API pública.</p>
+          <ul class="tags">
+            <li>PostgreSQL</li>
+            <li>Modelagem de dados</li>
+            <li>API REST</li>
+          </ul>
+        </article>
+
+        <article class="cartao">
+          <h3>Gerador de relatórios self-service</h3>
+          <p>O próprio usuário monta o relatório escolhendo entre mais de 300 campos, e as planilhas são geradas dinamicamente no backend.</p>
+          <ul class="tags">
+            <li>Java</li>
+            <li>Angular</li>
+            <li>Planilhas</li>
+          </ul>
+        </article>
+
+        <article class="cartao">
+          <h3>IA aplicada ao atendimento</h3>
+          <p>Chat de teste multimodal (texto, áudio e imagem) com comunicação assíncrona com o provedor de IA, base de conhecimento consultada pelos agentes via API e ações executadas pela própria IA, como o agendamento de reuniões.</p>
+          <ul class="tags">
+            <li>IA</li>
+            <li>Multimodal</li>
+            <li>Assíncrono</li>
+          </ul>
+        </article>
+
+        <article class="cartao">
+          <h3>Automação no fluxo de mensagens</h3>
+          <p>No fluxo crítico de mensagens, novas conversas viram registros de venda em tempo real, com deduplicação de clientes vindos de integrações externas.</p>
+          <ul class="tags">
+            <li>Tempo real</li>
+            <li>Deduplicação</li>
+            <li>Integrações</li>
+          </ul>
+        </article>
+
+        <article class="cartao">
+          <h3>Escalabilidade e segurança</h3>
+          <p>Invalidação de cache sincronizada entre servidores via filas, reformulação da gestão de sessão no frontend e controle de acesso hierárquico nas consultas do backend.</p>
+          <ul class="tags">
+            <li>Cache distribuído</li>
+            <li>Sessão</li>
+            <li>Controle de acesso</li>
+          </ul>
+        </article>
+
+        <article class="cartao">
+          <h3>Este site pessoal</h3>
+          <p>Portfólio construído em três etapas na disciplina PW14SW. Veja a evolução: <a href="etapas/etapa-1-html/">HTML puro</a>, <a href="etapas/etapa-2-css/">com CSS</a> e esta versão Mobile First.</p>
+          <ul class="tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Flexbox e Grid</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades e tecnologias</h2>
+
+      <div class="grade grade-habilidades">
+        <section class="cartao">
+          <h3>Back-end</h3>
+          <ul class="tags">
+            <li>Java</li>
+            <li>APIs REST</li>
+            <li>Webhooks</li>
+            <li>Processamento em lote</li>
+          </ul>
+        </section>
+
+        <section class="cartao">
+          <h3>Front-end</h3>
+          <ul class="tags">
+            <li>Angular</li>
+            <li>TypeScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </section>
+
+        <section class="cartao">
+          <h3>Banco de dados</h3>
+          <ul class="tags">
+            <li>PostgreSQL</li>
+            <li>Modelagem de dados</li>
+            <li>Modelos dinâmicos</li>
+          </ul>
+        </section>
+
+        <section class="cartao">
+          <h3>Nuvem e mensageria</h3>
+          <ul class="tags">
+            <li>AWS SQS</li>
+            <li>Amazon S3</li>
+            <li>Filas e retentativas</li>
+            <li>Cache distribuído</li>
+          </ul>
+        </section>
+
+        <section class="cartao">
+          <h3>Inteligência artificial</h3>
+          <ul class="tags">
+            <li>Integração com provedores de IA</li>
+            <li>Agentes com base de conhecimento</li>
+            <li>Chat multimodal</li>
+          </ul>
+        </section>
+
+        <section class="cartao">
+          <h3>Arquitetura e segurança</h3>
+          <ul class="tags">
+            <li>Orientação a eventos</li>
+            <li>Idempotência</li>
+            <li>OAuth</li>
+            <li>Controle de acesso</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p class="introducao">Quer conversar sobre uma oportunidade, um projeto ou trocar ideias sobre desenvolvimento? Me encontre em um dos canais abaixo.</p>
+
+      <ul class="perfis">
+        <li>
+          <a href="https://github.com/SEU-USUARIO-GITHUB" target="_blank" rel="noopener">
+            <img src="img/icones/github.svg" alt="" width="40" height="40">
+            <strong>GitHub</strong>
+            <span>Código e projetos</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/SEU-PERFIL-LINKEDIN" target="_blank" rel="noopener">
+            <img src="img/icones/linkedin.svg" alt="" width="40" height="40">
+            <strong>LinkedIn</strong>
+            <span>Trajetória profissional</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:thiagomazzaroli63@gmail.com">
+            <img src="img/icones/email.svg" alt="" width="40" height="40">
+            <strong>E-mail</strong>
+            <span>thiagomazzaroli63@gmail.com</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© 2026 Thiago Mazzaroli · Site desenvolvido para a disciplina PW14SW da UTFPR.</p>
+    <p><a href="#inicio">Voltar ao topo ↑</a></p>
+  </footer>
+</body>
+</html>
