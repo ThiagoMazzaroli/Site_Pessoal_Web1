@@ -2,7 +2,7 @@
 
 - **Aluno:** Thiago Mazzaroli
 - **Disciplina:** PW14SW — UTFPR · Projeto incremental 1: Site pessoal
-- **Site publicado:** https://thiagomazzaroli.github.io/Utfpr-Web1/
+- **Site publicado:** https://thiagomazzaroli.github.io/Site_Pessoal_Web1/
 
 ## Objetivo
 
